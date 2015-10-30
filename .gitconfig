@@ -1,0 +1,11 @@
+[user]
+	name = Albert Lombarte
+	email = alombarte@zinio.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	contrib = git shortlog --summary
+[github]
+	user = alombarte
+[merge]
+	# Write summary of contained commits when merging
+	log = true
