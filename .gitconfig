@@ -9,3 +9,5 @@
 [merge]
 	# Write summary of contained commits when merging
 	log = true
+[push]
+	default = simple
