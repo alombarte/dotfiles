@@ -94,7 +94,12 @@ complete -W "$(while read line; do echo ${line%%[, ]*}; done < ~/.ssh/known_host
 # Git autocompletion
 # Requires:
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-test -f ~/.git-completion.bash && . $_
+if ! test -f ~/.git-completion.bash; then
+	echo "Git completion is not enabled. Please install script:"
+	echo "curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash"
+else
+		~/.git-completion.bash && . $_
+fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
