@@ -5,6 +5,9 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	contrib = git shortlog --summary
 	filelog = log -u
+	dc = diff --cached
+	# Diff for a revision
+	dr = "!f() { git diff "$1"^.."$1"; }; f"
 [github]
 	user = alombarte
 [merge]
