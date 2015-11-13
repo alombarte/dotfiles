@@ -8,6 +8,10 @@
 	dc = diff --cached
 	# Diff for a revision
 	dr = "!f() { git diff "$1"^.."$1"; }; f"
+	# Stash operation
+	sl = stash list
+	sa = stash apply
+	ss = stash save
 [github]
 	user = alombarte
 [merge]
