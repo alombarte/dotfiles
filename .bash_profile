@@ -94,12 +94,7 @@ complete -W "$(while read line; do echo ${line%%[, ]*}; done < ~/.ssh/known_host
 # Git autocompletion
 # Requires:
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-if ! test -f ~/.git-completion.bash; then
-	echo "Git completion is not enabled. Please install script:"
-	echo "curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash"
-else
-		~/.git-completion.bash && . $_
-fi
+test -f ~/.git-completion.bash && . $_
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -110,6 +105,7 @@ export LC_ALL=en_US.UTF-8
 
 # GO
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/git/goworkspace
 
 #Docker
 #docker-machine start default
