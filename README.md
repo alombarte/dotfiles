@@ -1,6 +1,5 @@
 # dotfiles
-Time to move my dotfiles from Dropbox to a VCS
+Installation:
 
-    git clone --recursive git@github.com:alombarte/dotfiles.git
+	make
 
-Create symlinks
