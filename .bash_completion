@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Bash completion is installed via Homebrew
-source $(brew --prefix)/etc/bash_completion
-
 # Hostname SSH autocomplete
 complete -W "$(while read line; do echo ${line%%[, ]*}; done < ~/.ssh/known_hosts)" ssh
 
