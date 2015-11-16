@@ -15,11 +15,10 @@ BREW_PACKAGES=(
 	tmux
 	wget
 	tree
-	bash-completion
 )
 
 for pkg in ${BREW_PACKAGES[@]}
 do
-	echo "- Installing $pkg"
+    echo "- Installing $pkg"
     brew install $pkg
 done
