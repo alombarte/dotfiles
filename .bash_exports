@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# bash_config
-
 # Make vim the default editor
 export EDITOR="vim"
+
+# Enable colors (because every ls deserves it)
+export CLICOLOR='true'
+export LSCOLORS="gxfxcxdxbxCgCdabagacad"
 
 # Ignore duplicate commands in the history
 export HISTCONTROL=ignoredups
