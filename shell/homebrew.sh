@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if test ! $(which brew)
+if test ! "$(which brew)"
 then
   echo "Installing Homebrew"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
@@ -15,10 +15,11 @@ BREW_PACKAGES=(
 	tmux
 	wget
 	tree
+	shellcheck
 )
 
-for pkg in ${BREW_PACKAGES[@]}
+for pkg in "${BREW_PACKAGES[@]}"
 do
     echo "- Installing $pkg"
-    brew install $pkg
+    brew install "$pkg"
 done
