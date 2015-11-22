@@ -1,11 +1,11 @@
 machine:
   ghc:
-    version: cabal-install-1.18
+    version: 7.10.1
 
 dependencies:
   post:
     # install shellcheck
-    - cabal update; cabal install shellcheck
+    - cabal install shellcheck
 
 test:
   override:
