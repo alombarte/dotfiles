@@ -2,7 +2,7 @@
 	name = Albert Lombarte
 	email = alombarte@zinio.com
 [alias]
-	s = status 
+	s = status
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	contrib = git shortlog --summary
 	filelog = log -u
@@ -13,6 +13,8 @@
 	sl = stash list
 	sa = stash apply
 	ss = stash save
+	# Merge in master
+	mm = !sh -c 'git checkout master && git merge "$1" && git checkout "$1"' -
 [github]
 	user = alombarte
 [merge]
