@@ -15,6 +15,8 @@
 	ss = stash save
 	# Merge in master
 	mm = !sh -c 'git checkout master && git merge "$1" && git checkout "$1"' -
+	# List alias
+	a = "!git config -l | grep alias | cut -c 7-"
 [github]
 	user = alombarte
 [merge]
