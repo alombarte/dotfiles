@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load all bash_* files (bash_extra not under version control)
-for file in ~/.bash_{prompt,completion,exports,extra}; do
+for file in ~/.bash_{prompt,completion,aliases,exports,extra}; do
 	[[ -r "$file" ]] && [[ -f "$file" ]] && source "$file"
 done
 unset file
