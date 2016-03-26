@@ -19,3 +19,5 @@ unset file
 #elif infocmp xterm-256color >/dev/null 2>&1; then
 #    export TERM=xterm-256color
 #fi
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
