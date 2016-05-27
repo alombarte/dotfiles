@@ -16,6 +16,8 @@ BREW_PACKAGES=(
 	wget
 	tree
 	shellcheck
+	s3cmd
+	bash-completion
 )
 
 for pkg in "${BREW_PACKAGES[@]}"
