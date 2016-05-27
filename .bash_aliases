@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Show docker machine environmmentals
-function dm-env() {
+function docker-env() {
   echo "- Previous DOCKER environmental vars:"
   env | grep DOCKER
   eval "$(docker-machine env "${1:-default}")"
@@ -9,4 +9,4 @@ function dm-env() {
   env | grep DOCKER
 }
 
-alias dockerup="docker-machine start default; dm-env default"
+alias dockerup="docker-machine start default; docker-env default"

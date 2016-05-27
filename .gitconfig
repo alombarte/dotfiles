@@ -1,6 +1,6 @@
 [user]
 	name = Albert Lombarte
-	email = alombarte@zinio.com
+	email = alombarte@gmail.com
 [alias]
 	s = status
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
