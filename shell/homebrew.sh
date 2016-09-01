@@ -18,6 +18,7 @@ BREW_PACKAGES=(
 	shellcheck
 	s3cmd
 	bash-completion
+	Caskroom/cask/licecap
 )
 
 for pkg in "${BREW_PACKAGES[@]}"
