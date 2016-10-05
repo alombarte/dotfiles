@@ -10,3 +10,4 @@ function docker-env() {
 }
 
 alias dockerup="docker-machine start default; docker-env default"
+alias whiteboard-clean="bash ~/.dotfiles/utils/whiteBoardClean.sh"

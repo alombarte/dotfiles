@@ -18,3 +18,4 @@ dotfiles:
 		f=$$(basename $$file); \
 		ln -sfn $$file $(HOME)/$$f; \
 	done
+	ln -s $(CURDIR) ~/.dotfiles
