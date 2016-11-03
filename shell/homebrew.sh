@@ -20,6 +20,7 @@ BREW_PACKAGES=(
 	bash-completion
 	Caskroom/cask/licecap
 	ImageMagick	# Needed for the "convert" command, to convert whiteboard photos into clean images
+	unrar
 )
 
 for pkg in "${BREW_PACKAGES[@]}"
