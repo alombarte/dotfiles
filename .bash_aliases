@@ -10,4 +10,6 @@ function docker-env() {
 }
 
 alias dockerup="docker-machine start default; docker-env default"
+
+# Convert a crappy picture of a Whiteboard into a better looking graph.
 alias whiteboard-clean="bash ~/.dotfiles/utils/whiteBoardClean.sh"
