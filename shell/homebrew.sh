@@ -21,6 +21,7 @@ BREW_PACKAGES=(
 	Caskroom/cask/licecap
 	ImageMagick	# Needed for the "convert" command, to convert whiteboard photos into clean images
 	unrar
+	homebrew/php/php71
 )
 
 for pkg in "${BREW_PACKAGES[@]}"
