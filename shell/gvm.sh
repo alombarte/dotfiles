@@ -4,8 +4,8 @@
 # gvm subcommand fails in bash script: https://github.com/moovweb/gvm/issues/188
 [[ -s "$GVM_ROOT/scripts/gvm" ]] && source "$GVM_ROOT/scripts/gvm"
 
-gvm install go1.7.1
-gvm use go1.7.1
+gvm install go1.7.3
+gvm use go1.7.3
 
 # Apache Benchmark replacement
 go get -u github.com/rakyll/hey
