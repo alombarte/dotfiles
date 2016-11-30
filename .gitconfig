@@ -3,6 +3,9 @@
 	email = alombarte@gmail.com
 [alias]
 	s = status
+	p = pull
+	c = commit
+	a = add -p
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	contrib = git shortlog --summary
 	filelog = log -u
@@ -18,7 +21,7 @@
 	# Delete local and remote branch
 	bdel = !git branch -d "$1" && git push origin --delete "$1"
 	# List alias
-	a = "!git config -l | grep alias | cut -c 7-"
+	alias = "!git config -l | grep alias | cut -c 7-"
 [github]
 	user = alombarte
 [merge]
