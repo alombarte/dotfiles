@@ -22,7 +22,12 @@ BREW_PACKAGES=(
 	ImageMagick	# Needed for the "convert" command, to convert whiteboard photos into clean images
 	unrar
 	homebrew/php/php71
-	thefuck
+	#thefuck
+	#Caskroom/cask/virtualbox
+	Caskroom/cask/macdown
+	#docker
+	#docker-machine
+	#mitmproxy
 )
 
 for pkg in "${BREW_PACKAGES[@]}"
