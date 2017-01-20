@@ -15,3 +15,5 @@ alias dockerup="docker-machine start default; docker-env default"
 alias whiteboard-clean="bash ~/.dotfiles/utils/whiteBoardClean.sh"
 alias g="git"
 eval $(thefuck --alias)
+# cd to symbolic link pointer
+alias cds='cd -P'
