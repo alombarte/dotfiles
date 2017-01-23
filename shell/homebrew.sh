@@ -7,6 +7,7 @@ then
 fi
 
 BREW_PACKAGES=(
+	zsh
 	git
 	cig
 	ack
@@ -18,6 +19,7 @@ BREW_PACKAGES=(
 	shellcheck
 	s3cmd
 	bash-completion
+	caskroom/cask/brew-cask
 	Caskroom/cask/licecap
 	ImageMagick	# Needed for the "convert" command, to convert whiteboard photos into clean images
 	unrar
