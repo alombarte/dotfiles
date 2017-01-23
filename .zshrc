@@ -88,3 +88,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Plugin manager
 #source /usr/local/share/antigen/antigen.zsh
 
+# aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
