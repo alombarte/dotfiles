@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-gvm-plugin)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,3 +90,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+[[ -s "/Users/artomb/.gvm/scripts/gvm" ]] && source "/Users/artomb/.gvm/scripts/gvm"
