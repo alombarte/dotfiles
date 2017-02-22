@@ -2,6 +2,8 @@
 
 # Convert a crappy picture of a Whiteboard into a better looking graph.
 alias whiteboard-clean="bash ~/.dotfiles/utils/whiteBoardClean.sh"
+# Create pngs from dots
+alias dot="dot ~/.dotfiles/utils/dot.sh"
 alias g="git"
 eval $(thefuck --alias)
 # cd to symbolic link pointer
@@ -9,4 +11,3 @@ alias cds='cd -P'
 alias gus='gvm use go1.7.4'
 alias docker-clean='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 alias docker-clean-images='docker rmi $(docker images -a --filter=dangling=true -q)'
-
