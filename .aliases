@@ -9,5 +9,5 @@ eval $(thefuck --alias)
 # cd to symbolic link pointer
 alias cds='cd -P'
 alias gus='gvm use go1.7.4'
-alias docker-clean='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
-alias docker-clean-images='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias docker-clean='docker system prune'
+alias docker-clean-images='docker image prune'
