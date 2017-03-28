@@ -3,7 +3,7 @@
 # Convert a crappy picture of a Whiteboard into a better looking graph.
 alias whiteboard-clean="bash ~/.dotfiles/utils/whiteBoardClean.sh"
 # Create pngs from dots
-alias dot="dot ~/.dotfiles/utils/dot.sh"
+alias dot2img="bash ~/.dotfiles/utils/dot.sh"
 alias g="git"
 eval $(thefuck --alias)
 # cd to symbolic link pointer
