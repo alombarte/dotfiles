@@ -30,6 +30,7 @@ BREW_PACKAGES=(
 	#docker
 	#docker-machine
 	#mitmproxy
+	httpie
 )
 
 for pkg in "${BREW_PACKAGES[@]}"

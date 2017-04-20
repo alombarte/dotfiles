@@ -48,13 +48,7 @@ DEFAULT_USER="artomb"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-gvm-plugin)
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -93,3 +87,14 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 [[ -s "/Users/artomb/.gvm/scripts/gvm" ]] && source "/Users/artomb/.gvm/scripts/gvm"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git zsh-gvm-plugin)
+
+source $ZSH/oh-my-zsh.sh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
