@@ -20,21 +20,40 @@ BREW_PACKAGES=(
 	s3cmd
 	bash-completion
 	caskroom/cask/brew-cask
-	Caskroom/cask/licecap
 	ImageMagick	# Needed for the "convert" command, to convert whiteboard photos into clean images
 	unrar
 	homebrew/php/php71
 	#thefuck
-	#Caskroom/cask/virtualbox
-	Caskroom/cask/macdown
-	Caskroom/cask/docker
 	#mitmproxy
 	httpie
 	terraform
 )
 
+DESKTOP_APPS=(
+	Caskroom/cask/iterm2
+	Caskroom/cask/sublime-text
+	Caskroom/cask/nvalt
+	Caskroom/cask/textmate
+	Caskroom/cask/slack
+	Caskroom/cask/licecap
+	Caskroom/cask/macdown
+	Caskroom/cask/docker
+	Caskroom/cask/spotify
+	Caskroom/cask/google-chrome
+	Caskroom/cask/sequel-pro
+	# Caskroom/cask/visual-studio-code
+)
+
+echo "Installing command line applications"
 for pkg in "${BREW_PACKAGES[@]}"
 do
     echo "- Installing $pkg"
+    brew install "$pkg"
+done
+
+echo "Now installing desktop applications (CTRL+C to skip)"
+for pkg in "${DESKTOP_APPS[@]}"
+do
+    echo "- Installing desktop app $pkg"
     brew install "$pkg"
 done
