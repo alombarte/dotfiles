@@ -27,10 +27,10 @@ BREW_PACKAGES=(
 	#thefuck
 	#Caskroom/cask/virtualbox
 	Caskroom/cask/macdown
-	#docker
-	#docker-machine
+	Caskroom/cask/docker
 	#mitmproxy
 	httpie
+	terraform
 )
 
 for pkg in "${BREW_PACKAGES[@]}"
