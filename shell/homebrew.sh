@@ -27,6 +27,7 @@ BREW_PACKAGES=(
 	#mitmproxy
 	httpie
 	terraform
+	ansible
 )
 
 DESKTOP_APPS=(
