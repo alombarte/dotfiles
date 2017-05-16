@@ -28,6 +28,7 @@ BREW_PACKAGES=(
 	httpie
 	terraform
 	ansible
+	packer
 )
 
 DESKTOP_APPS=(
