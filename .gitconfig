@@ -22,6 +22,7 @@
 	bdel = !git branch -d "$1" && git push origin --delete "$1"
 	# List alias
 	alias = "!git config -l | grep alias | cut -c 7-"
+	sha = "rev-parse --short HEAD"
 [github]
 	user = alombarte
 [merge]
