@@ -43,7 +43,8 @@ DESKTOP_APPS=(
 	Caskroom/cask/spotify
 	Caskroom/cask/google-chrome
 	Caskroom/cask/sequel-pro
-	# Caskroom/cask/visual-studio-code
+	Caskroom/cask/visual-studio-code
+	Caskroom/cask/evernote
 )
 
 echo "Installing command line applications"
