@@ -1,6 +1,13 @@
 [user]
 	name = Albert Lombarte
 	email = albert@lombarte.org
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
 [alias]
 	s = status
 	p = pull
