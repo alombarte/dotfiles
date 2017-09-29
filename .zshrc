@@ -105,6 +105,10 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Pasting in the terminal is slow as hell,
+# https://github.com/zsh-users/zsh-syntax-highlighting/issues/295
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
 # Prompt for SSH key password to add the identity when the terminal opens
 eval `ssh-agent`
 ssh-add ~/.ssh/id_rsa
