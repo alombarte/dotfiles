@@ -29,6 +29,7 @@ BREW_PACKAGES=(
 	terraform
 	ansible
 	packer
+	rclone
 )
 
 DESKTOP_APPS=(
