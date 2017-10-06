@@ -109,6 +109,9 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/295
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
+# Boto3
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Prompt for SSH key password to add the identity when the terminal opens
 eval `ssh-agent`
 ssh-add ~/.ssh/id_rsa
