@@ -18,4 +18,10 @@ dotfiles:
 		f=$$(basename $$file); \
 		ln -sfn $$file $(HOME)/$$f; \
 	done
+	# Non public dotfiles
+	for file in $(shell find ~/Dropbox/DOTFILES -name ".*" -not -name ".gitmodules" -not -name ".gitignore" -not -name ".git" -not -name ".*.swp"); do \
+		f=$$(basename $$file); \
+		ln -sfn $$file $(HOME)/$$f; \
+	done
+
 	ln -s $(CURDIR) ~/.dotfiles
