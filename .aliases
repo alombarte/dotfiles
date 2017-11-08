@@ -12,3 +12,5 @@ alias cds='cd -P'
 alias gus='gvm use go1.7.4'
 alias docker-clean='docker system prune'
 alias docker-clean-images='docker image prune'
+# git pull all dirs
+alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'"
