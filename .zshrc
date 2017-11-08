@@ -110,6 +110,11 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 # Boto3
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
+# Go
+export GOPATH=$HOME/git/go
+export GOROOT=/usr/local/opt/go/libexec/
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
 # Prompt for SSH key password to add the identity when the terminal opens
 eval `ssh-agent`
 ssh-add ~/.ssh/id_rsa
