@@ -7,7 +7,6 @@ alias dot2img="bash ~/.dotfiles/utils/dot.sh"
 # Delete offending key line number from .ssh/known_hosts
 alias offending="bash ~/.dotfiles/utils/delete_offending_key.sh"
 alias g="git"
-eval $(thefuck --alias)
 # cd to symbolic link pointer
 alias cds='cd -P'
 alias gus='gvm use go1.7.4'
