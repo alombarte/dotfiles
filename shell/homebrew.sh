@@ -11,6 +11,8 @@ BREW_PACKAGES=(
 	git
 	cig
 	ack
+	jq
+	ripgrep
 	go
 	mercurial
 	tmux
@@ -29,6 +31,9 @@ BREW_PACKAGES=(
 	ansible
 	packer
 	rclone
+	#Caskroom/cask/java
+	#gradle
+
 )
 
 DESKTOP_APPS=(
