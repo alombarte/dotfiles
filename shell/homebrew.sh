@@ -50,6 +50,7 @@ DESKTOP_APPS=(
 	Caskroom/cask/sequel-pro
 	Caskroom/cask/visual-studio-code
 	Caskroom/cask/nomad
+	Caskroom/cask/scout
 )
 
 echo "Installing command line applications"
