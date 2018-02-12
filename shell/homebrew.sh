@@ -14,6 +14,7 @@ BREW_PACKAGES=(
 	jq
 	ripgrep
 	go
+	dep
 	mercurial
 	tmux
 	wget
@@ -24,13 +25,12 @@ BREW_PACKAGES=(
 	caskroom/cask/brew-cask
 	ImageMagick	# Needed for the "convert" command, to convert whiteboard photos into clean images
 	unrar
-	homebrew/php/php71
 	#mitmproxy
 	httpie
-	terraform
 	ansible
 	packer
 	rclone
+	hugo
 	#Caskroom/cask/java
 	#gradle
 
