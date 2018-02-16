@@ -31,8 +31,7 @@ BREW_PACKAGES=(
 	packer
 	rclone
 	hugo
-	#Caskroom/cask/java
-	#gradle
+	docker
 
 )
 
@@ -51,6 +50,7 @@ DESKTOP_APPS=(
 	Caskroom/cask/visual-studio-code
 	Caskroom/cask/nomad
 	Caskroom/cask/scout
+	Caskroom/cask/skype
 )
 
 echo "Installing command line applications"

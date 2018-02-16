@@ -1,6 +1,7 @@
 [user]
 	name = Albert
 	email = alombarte@gmail.com
+	signingkey = E6D535B430C2BAF7
 [color]
 	diff = auto
 	status = auto
