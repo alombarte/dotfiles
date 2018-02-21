@@ -1,7 +1,7 @@
 [user]
 	name = Albert
 	email = alombarte@gmail.com
-	signingkey = E6D535B430C2BAF7
+	signingkey = 5BD10CBF06E5D9AB
 [color]
 	diff = auto
 	status = auto
@@ -41,3 +41,5 @@
 [core]
 	excludesfile = ~/.gitignore
 	editor=vim
+[commit]
+	gpgsign = true
