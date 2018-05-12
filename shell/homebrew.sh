@@ -51,6 +51,7 @@ DESKTOP_APPS=(
 	Caskroom/cask/nomad
 	Caskroom/cask/scout
 	Caskroom/cask/skype
+	Caskroom/cask/telegram
 )
 
 echo "Installing command line applications"
