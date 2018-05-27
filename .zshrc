@@ -119,8 +119,3 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 # Remove the lambda from the command line
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/half-life.zsh-theme#L96
 PROMPT=$' %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} ❯%{$reset_color%} '
-
-
-# Prompt for SSH key password to add the identity when the terminal opens
-eval `ssh-agent`
-ssh-add ~/.ssh/id_rsa
