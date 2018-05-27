@@ -32,6 +32,8 @@ BREW_PACKAGES=(
 	rclone
 	hugo
 	docker
+	nmap
+	graphviz
 
 )
 
