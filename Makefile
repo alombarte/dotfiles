@@ -1,6 +1,6 @@
-.PHONY: all default install packages dotfiles
+.PHONY: all default install packages dotfiles sshkey
 
-all: packages dotfiles
+all: packages dotfiles sshkey
 
 default: install
 
@@ -25,3 +25,6 @@ dotfiles:
 	done
 
 	ln -s $(CURDIR) ~/.dotfiles
+
+sshkey:
+	ssh-add -K ~/.ssh/id_rsa

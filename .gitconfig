@@ -15,7 +15,8 @@
 	c = commit
 	a = add -p
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	contrib = git shortlog --summary
+	lg1 = log --pretty=oneline
+	contrib = shortlog --summary
 	filelog = log -u
 	dc = diff --cached
 	# Diff for a revision
