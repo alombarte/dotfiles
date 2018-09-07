@@ -1,9 +1,13 @@
 #!/bin/bash
 set -e
 
-(
-# find all bash files and run `shellcheck`
-find . -name '*.sh' -exec sh -c '
-	shellcheck "$1" && echo "[PASS] $1"
-  ' sh {} \;
-) || true
+shellcheck **/*.sh
+
+if [ $? -eq 0 ]
+then
+  echo "Looking good!"
+  exit 0
+else
+  echo "TEST FAILED :("
+  exit 1
+fi
