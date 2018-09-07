@@ -1,6 +1,6 @@
 # dotfiles
 
-[![Circle CI](https://circleci.com/gh/alombarte/dotfiles.svg?style=svg)](https://circleci.com/gh/alombarte/dotfiles)
+[![Build Status](https://travis-ci.org/alombarte/dotfiles.svg?branch=master)](https://travis-ci.org/alombarte/dotfiles)
 
 Clone recursively to get all the modules:
 
