@@ -1,4 +1,6 @@
 language: shell
 sudo: false
+git:
+  submodules: false
 script:
   - bash -c 'shopt -s globstar; ./test.sh'
