@@ -1,3 +1,4 @@
+#!/bin/bash
 NUM=$1
 re='^[0-9]+$'
 known_hosts="${HOME}/.ssh/known_hosts"
@@ -10,4 +11,4 @@ echo "Deleting key:"
 sed "${NUM}q;d" "$known_hosts"
 sed -if "${NUM}d" "$known_hosts"
 echo "Entries left: "
-cat $known_hosts | wc -l
+wc -l < "$known_hosts"

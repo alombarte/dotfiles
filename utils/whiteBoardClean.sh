@@ -2,7 +2,7 @@
 # Usage: Call the script passing the files or pattern you want to convert
 # E.g: whiteBoardClean.sh ~/photos/*.jpg
 
-for file in $*
+for file in "$@"
 do
  # do something on $file
 	if [ -f "$file" ]; then

@@ -1,3 +1,4 @@
+#!/bin/bash
 brew upgrade gnupg  # This has a make step which takes a while
 brew link --overwrite gnupg
 brew install pinentry-mac
