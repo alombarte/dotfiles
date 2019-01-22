@@ -45,3 +45,7 @@
 	fileMode = false
 [commit]
 	gpgsign = true
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
+[url "git@bitbucket.org:"]
+	insteadOf = https://bitbucket.org/
