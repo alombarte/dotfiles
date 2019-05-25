@@ -14,7 +14,6 @@ BREW_PACKAGES=(
 	jq
 	ripgrep
 	go
-	dep
 	mercurial
 	tmux
 	wget
@@ -34,6 +33,11 @@ BREW_PACKAGES=(
 	docker
 	nmap
 	graphviz
+	heroku/brew/heroku
+	nss # Network Security Services for mkcert
+	mkcert
+	kubernetes-helm
+	textql
 
 )
 
@@ -54,6 +58,7 @@ DESKTOP_APPS=(
 	Caskroom/cask/scout
 	Caskroom/cask/skype
 	Caskroom/cask/telegram
+	Caskroom/cask/tunnelblick
 )
 
 echo "Installing command line applications"
