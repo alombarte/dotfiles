@@ -49,3 +49,5 @@
 	insteadOf = https://gitlab.com/
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
+[diff]
+	noprefix = true
