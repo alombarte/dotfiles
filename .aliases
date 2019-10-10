@@ -16,3 +16,4 @@ alias docker-clean='docker container prune -f && docker volume prune -f && docke
 alias docker-clean-images='docker image prune'
 # git pull all dirs
 alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'"
+alias weather="curl http://wttr.in/Barcelona"
