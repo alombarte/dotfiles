@@ -15,7 +15,6 @@ BREW_PACKAGES=(
 	ripgrep
 	go
 	mercurial
-	tmux
 	wget
 	tree
 	shellcheck
