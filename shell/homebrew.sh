@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if test ! "$(which brew)"
+if test ! "$(command -v brew)"
 then
   echo "Installing Homebrew"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
