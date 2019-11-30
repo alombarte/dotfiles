@@ -1,7 +1,8 @@
 [user]
 	name = Albert Lombarte
 	email = alombarte@gmail.com
-	signingkey = 5BD10CBF06E5D9AB
+    #signingkey = 5BD10CBF06E5D9AB
+    signingkey = 7C2FDFC97F1542AAF6A3DFE6E005389E8A721E68
 [color]
 	diff = auto
 	status = auto

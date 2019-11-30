@@ -6,10 +6,6 @@ alias whiteboard-clean="bash ~/.dotfiles/utils/whiteBoardClean.sh"
 alias dot2img="bash ~/.dotfiles/utils/dot.sh"
 # Delete offending key line number from .ssh/known_hosts
 alias offending="bash ~/.dotfiles/utils/delete_offending_key.sh"
-alias g="git"
-# cd to symbolic link pointer
-alias cds='cd -P'
-alias gus='gvm use go1.7.4'
 # Docker
 alias docker-destroy='docker system prune --force --all --volumes'
 alias docker-clean='docker container prune -f && docker volume prune -f && docker network prune -f'
@@ -19,3 +15,6 @@ alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'"
 alias weather="curl http://wttr.in/Barcelona"
 # AWS
 alias ecr='$(aws ecr get-login --no-include-email --region eu-west-1)'
+
+# Linux
+alias copy='xclip -selection clipboard'
