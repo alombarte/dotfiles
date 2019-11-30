@@ -1,16 +1,13 @@
-.PHONY: all default install packages dotfiles sshkey
+.PHONY: all default install packages dotfiles sshkey os
 
-all: packages dotfiles sshkey
+all: packages dotfiles sshkey os
 
 default: install
 
 install: all
 
 packages:
-	for file in $(shell find $(CURDIR)/shell -type f); do \
-		f=$$(basename $$file); \
-		bash $$file; \
-	done
+	bash packages.sh
 
 dotfiles:
 	# add aliases for dotfiles
