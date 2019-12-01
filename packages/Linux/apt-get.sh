@@ -2,7 +2,7 @@
 
 PACKAGES=(
 # Basics
-git wget curl
+git wget curl zsh
 terminator xclip fonts-powerline
 jq 
 rclone
