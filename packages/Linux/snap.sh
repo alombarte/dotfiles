@@ -2,6 +2,7 @@
 
 PACKAGES=(
 spotify
+simplenote
 )
 
 PACKAGES_CLASSIC=(
