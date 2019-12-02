@@ -1,32 +1,34 @@
 #!/bin/bash
 # Script to clone all your git repositories (ssh) in your project directory.
-# Only clones if the directory does not exist.
+# Only clones them if the directory does not exist.
 #
-# HOW TO USE
-# Create the file ~/.gitrepos with the following format:
-# ------------------------------------------------------
+# Example of usage:
+# echo "github.com:alombarte/dotfiles" >> ~/.gitrepos
+# ./multiple_clone.sh
+
+# The file ~/.gitrepos contains one line per repo.
+# The format of each line is the ssh clone url but
+# without the leading 'git@' and the ending '.git'
+# Example:
 #
-# REPOS=(
-#  # just remove the leading "git@" and the ending ".git" from your SSH url:
+#  # Comments (#) and empty lines are allowed
 #  gitlab.com:organization/repo
 #  github.com:organization2/repo
 #  bitbucket.com:organization3/repo
-# )
-# ------------------------------------------------------
 
 PROJECTS_FOLDER="$HOME/git"
 REPOS_FILE="$HOME/.gitrepos"
 
 # ------------------------------------------------------
 set -e
-source ~/.gitrepos
 
 cd $PROJECTS_FOLDER
-for repo in "${REPOS[@]}"; do
+while read repo; do
+    ([[ "$repo" =~ ^#.*$ ]] || [[ -z "$repo" ]] )&& continue
     clone_to=$(echo $repo | cut -f2 -d:)
     organization=$(echo $clone_to | cut -f1 -d/)
     if [[ ! -e $clone_to ]]; then
         mkdir -p $organization
         git clone --recursive git@$repo.git $clone_to
     fi
-done
+done < $REPOS_FILE
