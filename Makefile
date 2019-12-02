@@ -21,7 +21,7 @@ dotfiles:
 		ln -sfn $$file $(HOME)/$$f; \
 	done
 
-	if [ -f ~/.dotfiles ] ; then ln -s $(CURDIR) ~/.dotfiles; fi
+	if [ ! -e ~/.dotfiles ] ; then ln -s $(CURDIR) ~/.dotfiles; fi
 
 sshkey:
 	ssh-add -K ~/.ssh/id_rsa
