@@ -4,10 +4,16 @@ PACKAGES=(
 # Basics
 git wget curl zsh
 terminator xclip fonts-powerline
-jq 
+jq
 rclone
 # VPN
 openvpn network-manager-openvpn network-manager-openvpn-gnome
+# Juniper VPN / Cisco AnyConnect
+openconnect network-manager-openconnect-gnome
+# Other tools
+mysql-workbench
+# Add signature as PDF annotation:
+xournal
 )
 
 sudo apt-get update
