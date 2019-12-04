@@ -5,6 +5,9 @@ if test ! "$(which gnome-tweaks)"; then
     sudo apt-get install gnome-tweak-tool
     sudo apt install gnome-shell-extensions
 
+    # Topbar with date, not only time
+    gsettings set org.gnome.desktop.interface clock-show-date true
+
     mkdir -p ~/.{themes,icons,fonts}
     
     cd ~/.icons
