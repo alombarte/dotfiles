@@ -24,7 +24,7 @@ set -e
 
 cd "$PROJECTS_FOLDER"
 while read -r repo; do
-    ([[ "$repo" =~ ^#.*$ ]] || [[ -z "$repo" ]] )&& continue
+    { [[ "$repo" =~ ^#.*$ ]] || [[ -z "$repo" ]]; } && continue
     clone_to=$(echo "$repo" | cut -f2 -d:)
     organization=$(echo "$clone_to" | cut -f1 -d/)
     if [[ ! -e $clone_to ]]; then
