@@ -22,13 +22,13 @@ REPOS_FILE="$HOME/.gitrepos"
 # ------------------------------------------------------
 set -e
 
-cd $PROJECTS_FOLDER
-while read repo; do
+cd "$PROJECTS_FOLDER"
+while read -r repo; do
     ([[ "$repo" =~ ^#.*$ ]] || [[ -z "$repo" ]] )&& continue
-    clone_to=$(echo $repo | cut -f2 -d:)
-    organization=$(echo $clone_to | cut -f1 -d/)
+    clone_to=$(echo "$repo" | cut -f2 -d:)
+    organization=$(echo "$clone_to" | cut -f1 -d/)
     if [[ ! -e $clone_to ]]; then
-        mkdir -p $organization
-        git clone --recursive git@$repo.git $clone_to
+        mkdir -p "$organization"
+        git clone --recursive "git@$repo.git" "$clone_to"
     fi
-done < $REPOS_FILE
+done < "$REPOS_FILE"

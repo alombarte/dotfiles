@@ -6,6 +6,7 @@ git wget curl zsh
 terminator xclip fonts-powerline
 jq
 rclone
+shellcheck
 # VPN
 openvpn network-manager-openvpn network-manager-openvpn-gnome
 # Juniper VPN / Cisco AnyConnect
