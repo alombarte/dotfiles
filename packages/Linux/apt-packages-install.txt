@@ -1,0 +1,15 @@
+# Basics
+git wget curl zsh
+stow
+terminator xclip fonts-powerline
+jq
+rclone
+shellcheck
+# VPN
+openvpn network-manager-openvpn network-manager-openvpn-gnome
+# Juniper VPN / Cisco AnyConnect
+openconnect network-manager-openconnect-gnome
+# Other tools
+mysql-workbench
+# Add signature as PDF annotation:
+xournal

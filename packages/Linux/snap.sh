@@ -12,6 +12,7 @@ ripgrep
 go
 code
 skype
+postman
 )
 
 sudo apt-get update
@@ -19,12 +20,12 @@ sudo apt-get update
 for pkg in "${PACKAGES[@]}"
 do
     echo "====================> $pkg"
-    sudo snap install $pkg
+    sudo snap install "$pkg"
 done
 
 for pkg in "${PACKAGES_CLASSIC[@]}"
 do
     echo "====================> $pkg"
-    sudo snap install $pkg --classic
+    sudo snap install "$pkg" --classic
 done
 

@@ -1,29 +1,15 @@
 #!/bin/bash
+# Installs all the software packages from the txt file and removes
+# other default packages in the distro.
 
-PACKAGES=(
-# Basics
-git wget curl zsh
-terminator xclip fonts-powerline
-jq
-rclone
-shellcheck
-# VPN
-openvpn network-manager-openvpn network-manager-openvpn-gnome
-# Juniper VPN / Cisco AnyConnect
-openconnect network-manager-openconnect-gnome
-# Other tools
-mysql-workbench
-# Add signature as PDF annotation:
-xournal
-)
+path=$(realpath $0)
+dir=$(dirname $path)
+
+# The TXT files can contain comments using #
+to_install=$(grep -v '^#' $dir/apt-packages-install.txt)
+to_remove=$(grep -v '^#' $dir/apt-packages-uninstall.txt)
 
 sudo apt-get update
-
-for pkg in "${PACKAGES[@]}"
-do
-    echo "==================== INSTALLING ===================="
-    echo "$pkg"
-    echo "===================================================="
-    sudo apt-get install $pkg -y
-done
-
+sudo apt-get install -y $(< $to_install)
+sudo apt-get remove -y $(< $to_remove)
+sudo apt autoremove -y
