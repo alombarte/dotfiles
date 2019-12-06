@@ -15,13 +15,13 @@ Darwin*)
 esac
 
 # Scripts for both operating systems.
-for script in $(find $DIR/packages/common -type f); do
+for script in $(find $DIR/packages/common -type f -name '*.sh'); do
     f=$(basename $script);
-    bash $script;
+    source $script;
 done
 
 # Specific packages for Linux or Mac
-for script in $(find $DIR/packages/$OS -type f); do
+for script in $(find $DIR/packages/$OS -type f -name '*.sh'); do
     f=$(basename $script);
-    bash $script;
+    source $script;
 done

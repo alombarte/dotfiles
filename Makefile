@@ -1,6 +1,6 @@
-.PHONY: all default install packages dotfiles sshkey os
+.PHONY: all default install packages dotfiles sshkey
 
-all: packages dotfiles sshkey os
+all: packages dotfiles sshkey
 
 default: install
 
