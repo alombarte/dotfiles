@@ -111,9 +111,9 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Go
-export GOPATH=$HOME/git/go
-export GOROOT=/usr/local/opt/go/libexec/
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+#export GOPATH=$HOME/git/go
+#export GOROOT=/usr/local/opt/go/libexec/
+#export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 
 # Remove the lambda from the command line

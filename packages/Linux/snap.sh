@@ -1,31 +1,13 @@
 #!/bin/bash
+# Installs all the software packages from the txt file and removes
+# other default packages in the distro.
 
-PACKAGES=(
-spotify
-simplenote
-)
+path=$(realpath $0)
+dir=$(dirname $path)
 
-PACKAGES_CLASSIC=(
-slack
-aws-cli
-ripgrep
-go
-code
-skype
-postman
-)
+# The TXT files can contain comments using # or empty lines
+to_install=$(grep -v '^\s*$\|^\s*\#' $dir/snap-packages.txt)
 
-sudo apt-get update
-
-for pkg in "${PACKAGES[@]}"
-do
-    echo "====================> $pkg"
-    sudo snap install "$pkg"
-done
-
-for pkg in "${PACKAGES_CLASSIC[@]}"
-do
-    echo "====================> $pkg"
-    sudo snap install "$pkg" --classic
-done
-
+while read -r pkg; do
+    sudo snap install $pkg
+done <<< "$to_install"
