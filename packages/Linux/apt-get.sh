@@ -6,8 +6,8 @@ path=$(realpath $0)
 dir=$(dirname $path)
 
 # The TXT files can contain comments using # or empty lines
-to_install=$(grep -v '^\s*$\|^\s*\#' $dir/../../packages-apt.txt)
-to_remove=$(grep -v '^\s*$\|^\s*\#' $dir/../../packages-apt-uninstall.txt)
+to_install=$(grep -v '^\s*$\|^\s*\#' $dir/../../linux-apt.txt)
+to_remove=$(grep -v '^\s*$\|^\s*\#' $dir/../../linux-apt-uninstall.txt)
 
 sudo apt-get update
 sudo apt-get install -y $(< $to_install)

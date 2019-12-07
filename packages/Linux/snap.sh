@@ -6,7 +6,7 @@ path=$(realpath $0)
 dir=$(dirname $path)
 
 # The TXT files can contain comments using # or empty lines
-to_install=$(grep -v '^\s*$\|^\s*\#' $dir/../../packages-snap.txt)
+to_install=$(grep -v '^\s*$\|^\s*\#' $dir/../../linux-snap.txt)
 
 while read -r pkg; do
     sudo snap install $pkg

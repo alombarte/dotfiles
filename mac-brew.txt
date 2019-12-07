@@ -1,0 +1,57 @@
+# Packages installed with homebrew on Mac
+# https://brew.sh/
+
+zsh
+git
+cig
+ack
+jq
+ripgrep
+go
+mercurial
+wget
+tree
+shellcheck
+s3cmd
+bash-completion
+caskroom/cask/brew-cask
+unrar
+httpie
+ansible
+packer
+rclone
+hugo
+docker
+nmap
+graphviz
+heroku/brew/heroku
+# Network Security Services for mkcert:
+nss
+mkcert
+kubernetes-helm
+textql
+# mitmproxy
+
+# Needed for the "convert" command, to convert whiteboard photos into clean images
+ImageMagick	
+
+
+# Cask packages
+# -------------
+Caskroom/cask/iterm2
+Caskroom/cask/sublime-text
+Caskroom/cask/nvalt
+Caskroom/cask/textmate
+Caskroom/cask/slack
+Caskroom/cask/licecap
+Caskroom/cask/macdown
+Caskroom/cask/docker
+Caskroom/cask/spotify
+Caskroom/cask/google-chrome
+Caskroom/cask/sequel-pro
+Caskroom/cask/visual-studio-code
+Caskroom/cask/nomad
+Caskroom/cask/scout
+Caskroom/cask/skype
+Caskroom/cask/telegram
+Caskroom/cask/tunnelblick
