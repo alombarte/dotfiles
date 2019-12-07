@@ -4,7 +4,7 @@
 
 Clone recursively to get all the modules:
 
-    git clone --recursive https://github.com/alombarte/dotfiles.git
+    git clone https://github.com/alombarte/dotfiles.git ~/.dotfiles
 
 Installation:
 

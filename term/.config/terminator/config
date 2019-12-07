@@ -16,6 +16,6 @@
 [profiles]
   [[default]]
     cursor_color = "#aaaaaa"
-    font = Meslo LG L DZ for Powerline 11
+    font = Meslo LG S for Powerline 11
     scrollbar_position = hidden
     use_system_font = False

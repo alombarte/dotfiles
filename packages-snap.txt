@@ -1,13 +1,16 @@
-# List of snap packages to install
+# List of packages to install via snap
+# https://snapcraft.io/store
+#
 # Pass along with the package name any additional flags (e.g: --channel=edge or --classic)
 
 spotify
 simplenote
-
 slack --classic
+skype --classic
+
+# Development
 aws-cli --classic
 ripgrep --classic
 go --classic
 code --classic
-skype --classic
 postman --classic

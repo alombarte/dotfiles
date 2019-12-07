@@ -1,0 +1,14 @@
+# UNINSTALL PACKAGES
+# The following packages are installed by default in the distribution
+# and they will be deleted from the system
+
+# Mail
+thunderbird
+
+# Games
+gnome-mines
+gnome-mahjongg
+aisleriot
+
+# Adware (Amazon link in desktop)
+ubuntu-web-launchers

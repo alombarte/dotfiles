@@ -1,27 +1,17 @@
-.PHONY: all default install packages dotfiles sshkey
+.PHONY: all default install packages dotfiles
 
-all: packages dotfiles sshkey
+all: packages dotfiles
 
 default: install
 
 install: all
 
 packages:
-	bash packages.sh
+	bash packages/install.sh
 
 dotfiles:
 	# add aliases for dotfiles
-	for file in $(shell find $(CURDIR) -name ".*" -not -name ".git" -not -name ".*.swp" -not -name ".travis.yml"); do \
-		f=$$(basename $$file); \
-		ln -sfn $$file $(HOME)/$$f; \
-	done
+	stow -v editors git term
+
 	# Non public dotfiles
-	for file in $(shell find ~/Dropbox/DOTFILES -maxdepth 1 -name ".*"); do \
-		f=$$(basename $$file); \
-		ln -sfn $$file $(HOME)/$$f; \
-	done
-
-	if [ ! -e ~/.dotfiles ] ; then ln -s $(CURDIR) ~/.dotfiles; fi
-
-sshkey:
-	ssh-add -K ~/.ssh/id_rsa
+	cd ~/Dropbox && stow DOTFILES

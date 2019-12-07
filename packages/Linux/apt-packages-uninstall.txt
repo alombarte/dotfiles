@@ -1,9 +1,0 @@
-    thunderbird
-    
-    # Games
-    gnome-mines
-    gnome-mahjongg
-    aisleriot
-    
-    # Adware (Amazon link in desktop)
-    ubuntu-web-launchers

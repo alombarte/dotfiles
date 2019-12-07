@@ -40,7 +40,7 @@
 [push]
 	default = simple
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.git_global_ignore
 	editor=vim
 	fileMode = false
 [commit]
