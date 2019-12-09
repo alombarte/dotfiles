@@ -20,3 +20,4 @@ mysql-workbench
 
 # Add signature as PDF annotation (Is not Mac's Preview, but at least gets the job done)
 xournal
+

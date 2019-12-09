@@ -10,4 +10,3 @@ if test ! "$(fc-list | grep Powerline)"; then
 else
 	echo "Powerline patched fonts already installed"
 fi
-
