@@ -1,6 +1,7 @@
 # Packages installed with homebrew on Mac
 # https://brew.sh/
 
+stow
 zsh
 git
 cig
@@ -33,7 +34,7 @@ textql
 # mitmproxy
 
 # Needed for the "convert" command, to convert whiteboard photos into clean images
-ImageMagick	
+ImageMagick
 
 
 # Cask packages

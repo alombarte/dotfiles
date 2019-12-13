@@ -115,9 +115,15 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 #export GOROOT=/usr/local/opt/go/libexec/
 #export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
-
+cd ~/git/
 # Remove the lambda from the command line
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/half-life.zsh-theme#L96
 PROMPT=$' %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} ❯%{$reset_color%} '
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/artomb/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/artomb/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/artomb/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/artomb/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
