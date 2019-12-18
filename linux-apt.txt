@@ -1,7 +1,7 @@
 # PACKAGES TO INSTALL via APT
 
 # Basics (needed to operate this repo)
-git wget curl zsh stow
+git wget curl zsh stow vim
 
 # Term
 terminator xclip fonts-powerline
