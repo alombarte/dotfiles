@@ -12,3 +12,6 @@ aisleriot
 
 # Adware (Amazon link in desktop)
 ubuntu-web-launchers
+
+# Services
+apache2

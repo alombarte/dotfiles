@@ -7,8 +7,10 @@ git wget curl zsh stow vim
 terminator xclip fonts-powerline
 jq
 rclone
+bat
+
 # echo "whatever" | gpg2 --clearsign
-pinentry
+#pinentry
 
 # Test bash scripts
 shellcheck
@@ -22,3 +24,10 @@ mysql-workbench
 
 # Add signature as PDF annotation (Is not Mac's Preview, but at least gets the job done)
 xournal
+
+# Videos
+ffmpeg
+kazam
+
+# Kindle
+calibre
