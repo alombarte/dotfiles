@@ -111,9 +111,12 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Go
-#export GOPATH=$HOME/git/go
+export GOPATH=$HOME/git/go
 #export GOROOT=/usr/local/opt/go/libexec/
-#export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
+
+# NPM global
+export PATH=~/.npm-global/bin:$PATH
 
 cd ~/git/
 # Remove the lambda from the command line
@@ -127,3 +130,4 @@ if [ -f '/Users/artomb/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/artomb/g
 if [ -f '/Users/artomb/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/artomb/google-cloud-sdk/completion.zsh.inc'; fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

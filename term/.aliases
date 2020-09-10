@@ -6,6 +6,9 @@ alias whiteboard-clean="bash ~/.dotfiles/utils/whiteBoardClean.sh"
 alias dot2img="bash ~/.dotfiles/utils/dot.sh"
 # Delete offending key line number from .ssh/known_hosts
 alias offending="bash ~/.dotfiles/utils/delete_offending_key.sh"
+
+alias spotifydl="bash ~/.dotfiles/utils/spotifydl.sh"
+
 # Docker
 alias docker-destroy='docker system prune --force --all --volumes'
 alias docker-clean='docker container prune -f && docker volume prune -f && docker network prune -f'
