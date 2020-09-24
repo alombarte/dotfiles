@@ -1,7 +1,7 @@
 [user]
 	name = Albert Lombarte
 	email = alombarte@gmail.com
-    signingkey = 70E0A4E55F2367E3F3DAD0C55BD10CBF06E5D9AB
+    #signingkey = 70E0A4E55F2367E3F3DAD0C55BD10CBF06E5D9AB
 [color]
 	diff = auto
 	status = auto
@@ -44,7 +44,7 @@
 	editor=vim
 	fileMode = false
 [commit]
-	gpgsign = true
+    #gpgsign = true
 [url "git@gitlab.com:"]
 	insteadOf = https://gitlab.com/
 [url "git@bitbucket.org:"]

@@ -9,7 +9,6 @@ ack
 jq
 ripgrep
 go
-mercurial
 wget
 tree
 shellcheck
@@ -51,7 +50,6 @@ Caskroom/cask/spotify
 Caskroom/cask/google-chrome
 Caskroom/cask/sequel-pro
 Caskroom/cask/visual-studio-code
-Caskroom/cask/nomad
 Caskroom/cask/scout
 Caskroom/cask/skype
 Caskroom/cask/telegram

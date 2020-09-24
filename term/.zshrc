@@ -117,6 +117,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # NPM global
 export PATH=~/.npm-global/bin:$PATH
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 cd ~/git/
 # Remove the lambda from the command line
