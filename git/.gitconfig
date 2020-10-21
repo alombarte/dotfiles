@@ -51,3 +51,5 @@
 	insteadOf = https://bitbucket.org/
 [diff]
 	noprefix = true
+[pull]
+	rebase = false

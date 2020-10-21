@@ -21,7 +21,7 @@ alias ecr='$(aws ecr get-login --no-include-email --region eu-west-1)'
 alias mclone="bash ~/.dotfiles/utils/massive_clone.sh"
 alias mpull="bash ~/.dotfiles/utils/massive_pull.sh"
 # git pull all (pull all immediate dirs)
-alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'"
+alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && [ -d .git ] && echo \"Pulling {}\" && git pull)' ';'"
 
 # Linux
 alias copy='xclip -selection clipboard'
