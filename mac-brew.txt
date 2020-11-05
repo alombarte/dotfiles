@@ -54,3 +54,4 @@ Caskroom/cask/scout
 Caskroom/cask/skype
 Caskroom/cask/telegram
 Caskroom/cask/tunnelblick
+Caskroom/cask/karabiner-elements

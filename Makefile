@@ -11,7 +11,7 @@ packages:
 
 dotfiles:
 	# add aliases for dotfiles
-	stow -v editors git term
+	stow -v editors git term keyboard
 
 	# Non public dotfiles
 	cd ~/Dropbox && stow DOTFILES
