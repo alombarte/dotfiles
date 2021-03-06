@@ -15,3 +15,5 @@ dotfiles:
 
 	# Non public dotfiles
 	cd ~/Dropbox && stow DOTFILES
+
+	chmod 700 -R ~/.ssh

@@ -8,6 +8,7 @@ simplenote
 slack --classic
 skype --classic
 vlc
+telegram-desktop
 
 # Development
 aws-cli --classic
@@ -15,3 +16,5 @@ ripgrep --classic
 go --classic
 code --classic
 postman --classic
+phpstorm --classic
+ngrok

@@ -10,6 +10,7 @@ to_install=$(grep -v '^\s*$\|^\s*\#' $dir/../../linux-apt.txt | tr "\n" " ")
 to_remove=$(grep -v '^\s*$\|^\s*\#' $dir/../../linux-apt-uninstall.txt | tr "\n" " ")
 
 sudo apt-get update
+echo "Trying to install $to_install"
 sudo apt-get install -y $to_install
 sudo apt-get remove -y $to_remove
 sudo apt autoremove -y

@@ -1,7 +1,7 @@
 # PACKAGES TO INSTALL via APT
 
 # Basics (needed to operate this repo)
-git wget curl zsh stow vim
+git wget curl zsh stow vim python
 
 # Term
 terminator xclip fonts-powerline
@@ -18,9 +18,6 @@ shellcheck
 # VPN (OpenVPN + Juniper VPN / Cisco AnyConnect)
 openvpn network-manager-openvpn network-manager-openvpn-gnome
 openconnect network-manager-openconnect-gnome
-
-# Dev tools
-mysql-workbench
 
 # Add signature as PDF annotation (Is not Mac's Preview, but at least gets the job done)
 xournal

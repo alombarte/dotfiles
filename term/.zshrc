@@ -74,8 +74,8 @@ export LANG=en_US.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-ssh-add -K ~/.ssh/id_rsa &> /dev/null
+# only in Mac:
+# ssh-add -K ~/.ssh/id_rsa &> /dev/null
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -107,8 +107,8 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # https://github.com/zsh-users/zsh-syntax-highlighting/issues/295
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
-# Boto3
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# Pip and local bins:
+export PATH="/home/artomb/.local/bin/:$PATH"
 
 # Go
 export GOPATH=$HOME/git/go
