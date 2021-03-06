@@ -3,16 +3,16 @@
     "editor.renderWhitespace": "boundary",
     "files.trimFinalNewlines": true,
     "php.validate.enable": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "explorer.confirmDragAndDrop": false,
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[vue]": {
         "editor.defaultFormatter": "octref.vetur"
@@ -35,7 +35,11 @@
     "prettier.singleQuote": true,
     "javascript.preferences.quoteStyle": "single",
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
+    "editor.minimap.enabled": false,
+    "update.showReleaseNotes": false,
+    "workbench.enableExperiments": false,
+    "extensions.ignoreRecommendations": true,
     
 }
