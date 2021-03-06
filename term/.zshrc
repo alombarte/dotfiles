@@ -119,7 +119,6 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=~/.npm-global/bin:$PATH
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-cd ~/git/
 # Remove the lambda from the command line
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/half-life.zsh-theme#L96
 PROMPT=$' %{$limegreen%}%~%{$reset_color%}$(ruby_prompt_info " with%{$fg[red]%} " v g "%{$reset_color%}")$vcs_info_msg_0_%{$orange%} ❯%{$reset_color%} '

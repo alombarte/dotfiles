@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 # Manual installation of terraform (packages are way behind)
 
 VERSION=0.12.16
@@ -10,7 +10,7 @@ if test -z "$target"
 then
       target=$VERSION
 fi
-read -p "Proceed with $target? (Y/N): " confirm && [[ $confirm == [yY] ]] || exit 0
+read -r -p "Proceed with $target? (Y/N): " confirm && [[ $confirm == [yY] ]] || exit 0
 
 
 wget https://releases.hashicorp.com/terraform/${target}/terraform_${target}_${PLATFORM}_amd64.zip
