@@ -21,6 +21,7 @@ openconnect network-manager-openconnect-gnome
 
 # Add signature as PDF annotation (Is not Mac's Preview, but at least gets the job done)
 xournal
+okular
 
 # Video
 ffmpeg

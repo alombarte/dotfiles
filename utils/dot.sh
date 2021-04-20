@@ -8,4 +8,4 @@ if [ "$#" -ne 1 ]; then
 	exit 1
 fi
 dot -Tpng "$IN" -o "$OUT"
-open "$OUT"
+open "$OUT" || xdg-open "$OUT"
