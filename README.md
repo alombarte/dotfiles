@@ -17,6 +17,12 @@ Clone the repository under `~/.dotfiles`:
 
     git clone https://github.com/alombarte/dotfiles.git ~/.dotfiles
 
+Dependencies:
+
+- `make`
+- `curl`
+- `git`
+
 Install all **selected software** (you might want to change it):
 
 	make packages

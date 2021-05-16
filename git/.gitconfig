@@ -1,7 +1,7 @@
 [user]
 	name = Albert Lombarte
 	email = alombarte@gmail.com
-    #signingkey = 70E0A4E55F2367E3F3DAD0C55BD10CBF06E5D9AB
+	signingkey = D97AB5B9AD8B81D2
 [color]
 	diff = auto
 	status = auto
