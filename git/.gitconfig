@@ -44,7 +44,7 @@
 	editor=vim
 	fileMode = false
 [commit]
-    #gpgsign = true
+	gpgsign = true
 [url "git@gitlab.com:"]
 	insteadOf = https://gitlab.com/
 [url "git@bitbucket.org:"]
