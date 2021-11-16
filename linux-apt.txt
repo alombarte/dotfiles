@@ -8,6 +8,7 @@ terminator xclip fonts-powerline
 jq
 rclone
 bat
+ansible
 
 # echo "whatever" | gpg2 --clearsign
 #pinentry

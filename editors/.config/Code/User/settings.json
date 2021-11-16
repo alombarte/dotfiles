@@ -3,7 +3,6 @@
     "editor.renderWhitespace": "boundary",
     "files.trimFinalNewlines": true,
     "php.validate.enable": false,
-    "window.zoomLevel": 2,
     "explorer.confirmDragAndDrop": false,
     "workbench.startupEditor": "none",
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -41,5 +40,15 @@
     "update.showReleaseNotes": false,
     "workbench.enableExperiments": false,
     "extensions.ignoreRecommendations": true,
+    "telemetry.enableTelemetry": false,
+    "go.toolsManagement.autoUpdate": true,
+    "files.associations": {
+        "*.tmpl": "go-template"
+    },
+    "go-template.languages": [
+        "json"
+    ],
+    "window.zoomLevel": 1,
+    "editor.bracketPairColorization.enabled": true,
     
 }

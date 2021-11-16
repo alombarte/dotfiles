@@ -111,9 +111,8 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 export PATH="/home/artomb/.local/bin/:$PATH"
 
 # Go
-export GOPATH=$HOME/git/go
 #export GOROOT=/usr/local/opt/go/libexec/
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin:/home/artomb/go/bin
 
 # NPM global
 export PATH=~/.npm-global/bin:$PATH

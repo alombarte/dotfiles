@@ -7,8 +7,7 @@ alias dot2img="bash ~/.dotfiles/utils/dot.sh"
 # Delete offending key line number from .ssh/known_hosts
 alias offending="bash ~/.dotfiles/utils/delete_offending_key.sh"
 
-alias spotifydl="bash ~/.dotfiles/utils/spotifydl.sh"
-
+alias spotifydl="docker run -it --rm --network='host' -v '/home/artomb/Music:/music' alombarte/spotifydl spotdl"
 # Docker
 alias docker-destroy='docker system prune --force --all --volumes'
 alias docker-clean='docker container prune -f && docker volume prune -f && docker network prune -f'
@@ -25,3 +24,4 @@ alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && [ -d .git ] && echo
 
 # Linux
 alias copy='xclip -selection clipboard'
+alias cat='batcat'
