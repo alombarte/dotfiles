@@ -48,7 +48,10 @@
     "go-template.languages": [
         "json"
     ],
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.bracketPairColorization.enabled": true,
+    "git.confirmSync": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Ayu Dark Bordered",
     
 }

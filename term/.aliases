@@ -19,6 +19,7 @@ alias ecr='$(aws ecr get-login --no-include-email --region eu-west-1)'
 # Massive clone and pull
 alias mclone="bash ~/.dotfiles/utils/massive_clone.sh"
 alias mpull="bash ~/.dotfiles/utils/massive_pull.sh"
+alias persiana="bash ~/.dotfiles/utils/shutter_level.sh"
 # git pull all (pull all immediate dirs)
 alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && [ -d .git ] && echo \"Pulling {}\" && git pull)' ';'"
 
