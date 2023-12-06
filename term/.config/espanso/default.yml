@@ -11,14 +11,17 @@ matches:
   - trigger: ":hl"
     replace: |
       {{< highlight json >}}
-      {
-
-      }
       {{< /highlight >}}
   - trigger: ":note"
     replace: |
       {{< note title="" type="warning|question|info|error|tip|note" >}}
       {{< /note >}}
+  - trigger: ":schema"
+    replace: |
+      {{< schema data="file.json" >}}
+  - trigger: ":badge"
+    replace: |
+      {{< badge color="denim" >}}Enterprise{{< /badge >}}
   - trigger: ":button"
     replace: |
       {{< button-group >}}
@@ -32,11 +35,35 @@ matches:
     replace: |
       {{< terminal title="Term" >}}
       {{< /terminal >}}
+  - trigger: ":kra"
+    replace: |
+      {
+      "version": 3,
+      "$schema": "https://www.krakend.io/schema/krakend.json",
+      "host": ["http://localhost:8080"],
+      "debug_endpoint": true,
+      "echo_endpoint": true,
+      "endpoints": [{
+        "endpoint": "/test",
+        "backend": [{
+          "url_pattern": "/__debug/test"
+      }]
+      }]
+  - trigger: ":chick"
+    replace: ":sunny: :chicken:"
   - trigger: ":br"
     replace: "Best regards,"
   - trigger: ":web"
     replace: "~/git/devopsfaith/website"
+  - trigger: ":meet"
+    replace: "https://krakend.pipedrive.com/scheduler/92vwQ3Ho/krakend-meeting"
+  - trigger: ":agameet"
+    replace: https://krakend.pipedrive.com/scheduler/6mB4q3FG/krakend-meeting
+  - trigger: ":docs"
+    replace: "~/git/devopsfaith/website/content/docs"
   # Edit the espanso configuration
+  - trigger: ":g2"
+    replace: "https://www.g2.com/products/krakend-api-gateway/reviews"
   - trigger: ":espanso"
     replace: "{{output}}"
     vars:
@@ -44,6 +71,7 @@ matches:
         type: shell
         params:
           cmd: "code ~/.config/espanso/default.yml"
+
   - trigger: ":dot"
     replace: "{{output}}"
     vars:
@@ -58,4 +86,4 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%m/%d/%Y"
+          format: "%Y-%m-%d"

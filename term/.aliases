@@ -7,12 +7,14 @@ alias dot2img="bash ~/.dotfiles/utils/dot.sh"
 # Delete offending key line number from .ssh/known_hosts
 alias offending="bash ~/.dotfiles/utils/delete_offending_key.sh"
 
+alias open="xdg-open"
+
 alias spotifydl="docker run -it --rm --network='host' -v '/home/artomb/Music:/music' alombarte/spotifydl spotdl"
 # Docker
 alias docker-destroy='docker system prune --force --all --volumes'
 alias docker-clean='docker container prune -f && docker volume prune -f && docker network prune -f'
 alias docker-clean-images='docker image prune'
-alias weather="curl http://wttr.in/Barcelona"
+alias weather="curl https://wttr.in/cerdanyola-del-valles"
 # AWS
 alias ecr='$(aws ecr get-login --no-include-email --region eu-west-1)'
 
@@ -25,4 +27,8 @@ alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && [ -d .git ] && echo
 
 # Linux
 alias copy='xclip -selection clipboard'
-alias cat='batcat'
+alias cat='bat -p'
+alias krakendee='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" krakend/krakend-ee:watch'
+alias krakend='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" devopsfaith/krakend:watch'
+alias days='function days(){ date "+%d/%m/%Y %H:%M (%Z)" -d "+$1 days"; }; days'
+
