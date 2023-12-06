@@ -8,10 +8,6 @@
 # it gets replaced by the "replace" string.
 undo_backspace: true
 matches:
-  - trigger: ":hl"
-    replace: |
-      {{< highlight json >}}
-      {{< /highlight >}}
   - trigger: ":note"
     replace: |
       {{< note title="" type="warning|question|info|error|tip|note" >}}
@@ -49,8 +45,6 @@ matches:
           "url_pattern": "/__debug/test"
       }]
       }]
-  - trigger: ":chick"
-    replace: ":sunny: :chicken:"
   - trigger: ":br"
     replace: "Best regards,"
   - trigger: ":web"
