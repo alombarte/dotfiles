@@ -2,6 +2,7 @@
   title_transmit_bg_color = "#3d21bb"
   title_inactive_fg_color = "#888a85"
   title_inactive_bg_color = "#2e3436"
+  inactive_color_offset = 0.7638888888888888
   suppress_multiple_term_dialog = True
 [keybindings]
   hide_window = F12
@@ -14,13 +15,45 @@
     scrollbar_position = hidden
     palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
     use_system_font = False
+  [[Screensharing]]
+    cursor_shape = underline
+    cursor_color = "#fce94f"
+    cursor_color_fg = False
+    font = Meslo LG S for Powerline 15
+    scrollbar_position = hidden
+    exit_action = hold
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    custom_command = "export "
+    use_system_font = False
 [layouts]
   [[default]]
-    [[[child1]]]
-      parent = window0
-      profile = default
-      type = Terminal
-    [[[window0]]]
-      parent = ""
+    [[[child0]]]
       type = Window
+      parent = ""
+      order = 0
+      position = 2371:65
+      maximised = False
+      fullscreen = False
+      size = 802, 547
+      title = artomb@krakend:~
+      last_active_term = b7fda5c8-1dee-40c7-a5d0-ed848040d3b1
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 271
+      ratio = 0.5
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 7a1137f5-5630-4abf-868f-4ab6459ebed7
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = b7fda5c8-1dee-40c7-a5d0-ed848040d3b1
 [plugins]

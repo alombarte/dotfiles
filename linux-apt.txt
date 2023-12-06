@@ -4,7 +4,7 @@
 git wget curl zsh stow vim python
 
 # Term
-terminator xclip fonts-powerline
+tilix tilix-common terminator xclip fonts-powerline
 jq
 rclone
 bat

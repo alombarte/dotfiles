@@ -17,3 +17,6 @@ dotfiles:
 	cd ~/Dropbox && stow DOTFILES
 
 	chmod 700 -R ~/.ssh
+
+	# Loading Tilix settings
+	~/.dotfiles/term/tilix.sh load
