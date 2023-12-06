@@ -6,18 +6,28 @@ vim.g.mapleader = '.'
 -- Buffer management
 gmap('', '<C-w>',':bd<CR>', {})
 
--
+
 -- The holy Trinity. Open files with .., find code with .r, open buffers with .b
---
+
 gmap('n', '<leader>b', ':Buffers<CR>', { noremap = true})
 gmap('n', '<leader>.', ':Files<CR>', { noremap = true})
 gmap('n', '<leader>r', ':Rg<CR>', { noremap = true })
 
+-- Backspace clears highlighting
+gmap('', '<BS>', ':nohl<CR>', { noremap = true })
 
 gmap('', '<leader>l', '<c-w>l', {})
 gmap('', '<leader>h', '<c-w>h', {})
 gmap('', '<leader>j', '<c-w>j', {})
 gmap('', '<leader>k', '<c-w>k', {})
+
+-- Move current lines up and down
+gmap('n', '<C-Down>',':m+<CR>==', {})
+gmap('n', '<C-Up>',':m-2<CR>==', {})
+gmap('i', '<C-Down>','<C-O>:m+<CR><C-O>==', {})
+gmap('i', '<C-Up>','<C-O>:m-2<CR><C-O>==', {})
+gmap('v', '<C-Down>',  ":m'>+<CR>gv=gv", {})
+gmap('v', '<C-Up>', ":m'<-2<CR>gv=gv", {})
 
 gmap('n', '<leader>1',  ':color kanagawa-wave<CR>', {})
 gmap('n', '<leader>2',  ':color iceberg<CR>', {})
@@ -34,10 +44,6 @@ gmap('n', '<leader>S', ':wall<CR>:mksession!<CR>:qall<CR>', {})
 
 gmap('v', '<', '<gv', { noremap = true })
 gmap('v', '>', '>gv', { noremap = true })
-
-gmap('n', '<leader>n', ':nohl', { noremap = true })
-gmap('v', '<leader>n', ':nohl', { noremap = true })
-gmap('i', '<C-space> <ESC>', ':nohl', { noremap = true })
 
 
 gmap('n','<space>', 'za', { noremap = true })
