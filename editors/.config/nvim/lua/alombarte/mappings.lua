@@ -12,6 +12,9 @@ gmap('', '<C-w>',':bd<CR>', {})
 gmap('n', '<leader>b', ':Buffers<CR>', { noremap = true})
 gmap('n', '<leader>.', ':Files<CR>', { noremap = true})
 gmap('n', '<leader>r', ':Rg<CR>', { noremap = true })
+gmap('n', '<leader>t', ':TerminalVSplit zsh<CR>', { noremap = true })
+-- Nerdtree
+gmap('', '<C-B>', ":NERDTreeToggle<CR>", {})
 
 -- Backspace clears highlighting
 gmap('', '<BS>', ':nohl<CR>', { noremap = true })

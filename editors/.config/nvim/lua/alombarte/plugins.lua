@@ -17,13 +17,27 @@ Plug 'neovim/nvim-lspconfig'
 -- Autocomplete
 Plug "hrsh7th/nvim-cmp"
 Plug "hrsh7th/cmp-nvim-lsp"
+-- Plug 'https://github.com/neoclide/coc.nvim'
+
+-- Fashion Victim
+-- Terminal should have a font from https://github.com/ryanoasis/nerd-fonts
+Plug 'https://github.com/ryanoasis/vim-devicons'
+
+-- Status bar please
+Plug 'https://github.com/vim-airline/vim-airline'
 
 -- File explorer
 Plug 'preservim/nerdtree'
 
--- A personal wiki
-Plug 'vimwiki/vimwiki'
+-- Terminal
+-- Plug 'https://github.com/tc50cal/vim-terminal'
 
+-- Multi selection
+Plug 'mg979/vim-visual-multi'
+
+-- Class outline viewer
+-- requires ctags
+-- Plug 'https://github.com/preservim/tagbar'
 
 -- NeoGit ?
 --
@@ -39,7 +53,17 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim'
 
 -- TreeSitter (decent highlighting)
+-- :TSInstall go
+-- :TSInstall json
+-- :TSInstall mermaid
+-- :TSInstall markdown
+-- :TSInstall lua
+-- :TSInstall toml
+-- :TSInstall vim
 Plug 'nvim-treesitter/nvim-treesitter'
+
+-- Comments with gcc & gc
+Plug 'https://github.com/tpope/vim-commentary'
 
 -- Themes
 Plug 'rebelot/kanagawa.nvim'
@@ -48,6 +72,7 @@ Plug 'catppuccin/nvim'
 Plug 'folke/tokyonight.nvim'
 Plug 'cocopon/iceberg.vim'
 Plug 'daltonmenezes/aura-theme'
+Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 
 vim.fn['plug#end']()
 
