@@ -17,7 +17,6 @@ Plug 'neovim/nvim-lspconfig'
 -- Autocomplete
 Plug "hrsh7th/nvim-cmp"
 Plug "hrsh7th/cmp-nvim-lsp"
--- Plug 'https://github.com/neoclide/coc.nvim'
 
 -- Fashion Victim
 -- Terminal should have a font from https://github.com/ryanoasis/nerd-fonts
@@ -36,21 +35,10 @@ Plug 'preservim/nerdtree'
 Plug 'mg979/vim-visual-multi'
 
 -- Class outline viewer
--- requires ctags
--- Plug 'https://github.com/preservim/tagbar'
-
--- NeoGit ?
---
-Plug 'nvim-lua/plenary.nvim'
-Plug 'TimUntersberger/neogit'
-
+-- requires ctags (apt install exuberant-ctags)
+Plug 'https://github.com/preservim/tagbar'
 
 Plug 'tomlion/vim-solidity'
-
--- Telescope
---
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim'
 
 -- TreeSitter (decent highlighting)
 -- :TSInstall go

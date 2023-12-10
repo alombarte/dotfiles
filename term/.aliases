@@ -7,7 +7,6 @@ alias dot2img="bash ~/.dotfiles/utils/dot.sh"
 # Delete offending key line number from .ssh/known_hosts
 alias offending="bash ~/.dotfiles/utils/delete_offending_key.sh"
 
-alias open="xdg-open"
 
 alias spotifydl="docker run -it --rm --network='host' -v '/home/artomb/Music:/music' alombarte/spotifydl spotdl"
 # Docker
@@ -25,10 +24,13 @@ alias persiana="bash ~/.dotfiles/utils/shutter_level.sh"
 # git pull all (pull all immediate dirs)
 alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && [ -d .git ] && echo \"Pulling {}\" && git pull)' ';'"
 
+alias nv="nvim"
+alias nvc="nvim --cmd 'cd ~/.dotfiles/editors/.config/nvim/'"
+
 # Linux
 alias copy='xclip -selection clipboard'
 alias cat='bat -p'
 alias krakendee='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" krakend/krakend-ee:watch'
 alias krakend='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" devopsfaith/krakend:watch'
 alias days='function days(){ date "+%d/%m/%Y %H:%M (%Z)" -d "+$1 days"; }; days'
-
+alias open="xdg-open"

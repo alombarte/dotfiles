@@ -39,14 +39,11 @@ local lsp_mappings = function(client)
     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
   end, bufopts)
   vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, bufopts)
-  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<leader>f', vim.lsp.buf.format , bufopts)
 
   vim.keymap.set('n', '<leader>dn', vim.diagnostic.goto_next, bufopts)
-
-  vim.keymap.set('n', '<leader>dbg', ':Termdebug', bufopts) 
 
   -- This does not work well:
   -- vim.keymap.set('i', '<C-N>', vim.lsp.omnifunc, bufopts)
