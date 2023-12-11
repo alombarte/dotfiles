@@ -44,12 +44,12 @@ gmap('n', '<leader>c5',  ':color lunaperche<CR>', {})
 gmap('n', '<leader>c6',  ':color slate<CR>', {})
 gmap('n', '<leader>c7',  ':color aura-dark<CR>', {})
 
-gmap('n', '<leader>q', ':%s/\\s\\+$//g<CR>', {})
 gmap('n', '<leader>s', ':mksession!<CR>', {})
+gmap('n', '<leader>q', ':%s/\\s\\+$//g<CR>', {})
 gmap('n', '<leader>S', ':wall<CR>:mksession!<CR>:qall<CR>', {})
 
-gmap('v', '>', '<gv', { noremap = true })
-gmap('v', '<', '>gv', { noremap = true })
+gmap('v', '<', '<gv', { noremap = true })
+gmap('v', '>', '>gv', { noremap = true })
 
 
 gmap('n','<space>', 'za', { noremap = true })
