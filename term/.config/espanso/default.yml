@@ -8,6 +8,9 @@
 # it gets replaced by the "replace" string.
 undo_backspace: true
 matches:
+  - trigger: ":image"
+    replace: |
+      {{< product image >}}:{{< product latest_version >}}"
   - trigger: ":note"
     replace: |
       {{< note title="" type="warning|question|info|error|tip|note" >}}
@@ -53,6 +56,8 @@ matches:
     replace: "https://krakend.pipedrive.com/scheduler/92vwQ3Ho/krakend-meeting"
   - trigger: ":agameet"
     replace: https://krakend.pipedrive.com/scheduler/6mB4q3FG/krakend-meeting
+  - trigger: ":bizmeet"
+    replace: https://calendar.app.google/CLoXYVgnFiiMbnCp9
   - trigger: ":docs"
     replace: "~/git/devopsfaith/website/content/docs"
   # Edit the espanso configuration

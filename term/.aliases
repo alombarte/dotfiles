@@ -13,7 +13,7 @@ alias spotifydl="docker run -it --rm --network='host' -v '/home/artomb/Music:/mu
 alias docker-destroy='docker system prune --force --all --volumes'
 alias docker-clean='docker container prune -f && docker volume prune -f && docker network prune -f'
 alias docker-clean-images='docker image prune'
-alias weather="curl https://wttr.in/cerdanyola-del-valles"
+alias weather='function weather(){ l="$1"; if [ "" = "$l" ]; then l="cerdanyola-del-valles"; fi; curl "https://wttr.in/$l" }; weather'
 # AWS
 alias ecr='$(aws ecr get-login --no-include-email --region eu-west-1)'
 
@@ -34,3 +34,5 @@ alias krakendee='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" krake
 alias krakend='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" devopsfaith/krakend:watch'
 alias days='function days(){ date "+%d/%m/%Y %H:%M (%Z)" -d "+$1 days"; }; days'
 alias open="xdg-open"
+alias vim="nvim"
+alias vi="nvim"

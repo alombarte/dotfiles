@@ -40,18 +40,31 @@
     "update.showReleaseNotes": false,
     "workbench.enableExperiments": false,
     "extensions.ignoreRecommendations": true,
-    "telemetry.enableTelemetry": false,
     "go.toolsManagement.autoUpdate": true,
     "files.associations": {
         "*.tmpl": "go-template"
     },
     "go-template.languages": [
-        "json"
+        "json", "yaml"
     ],
-    "window.zoomLevel": 2,
     "editor.bracketPairColorization.enabled": true,
     "git.confirmSync": false,
     "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Ayu Dark Bordered",
-    
+    "workbench.colorTheme": "Ayu Mirage",
+    "go.formatTool": "gofmt",
+    "go.formatFlags": [
+        "-s"
+    ],
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+    },
+    "telemetry.telemetryLevel": "off",
+    "mermaid-editor.generate.type": "png",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "git.openRepositoryInParentFolders": "never",
+    "window.zoomLevel": 1,
+    "[go-template]": {},
+
 }
