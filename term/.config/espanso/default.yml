@@ -10,7 +10,7 @@ undo_backspace: true
 matches:
   - trigger: ":image"
     replace: |
-      {{< product image >}}:{{< product latest_version >}}"
+      {{< product image >}}:{{< product latest_version >}}
   - trigger: ":note"
     replace: |
       {{< note title="" type="warning|question|info|error|tip|note" >}}

@@ -8,7 +8,6 @@ tilix tilix-common terminator xclip fonts-powerline
 jq
 rclone
 bat
-ansible
 
 # Desktop
 flameshot
@@ -34,6 +33,3 @@ obs-studio
 
 # Kindle
 calibre
-
-# Play
-steam

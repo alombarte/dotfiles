@@ -23,12 +23,17 @@ REPOS_FILE="$HOME/.gitrepos"
 set -e
 
 cd "$PROJECTS_FOLDER"
+i=0
+cloned=0
 while read -r repo; do
     { [[ "$repo" =~ ^#.*$ ]] || [[ -z "$repo" ]]; } && continue
     clone_to=$(echo "$repo" | cut -f2 -d:)
     organization=$(echo "$clone_to" | cut -f1 -d/)
+    ((i=i+1))
     if [[ ! -e $clone_to ]]; then
         mkdir -p "$organization"
         git clone --recursive "git@$repo.git" "$clone_to"
+        ((cloned=cloned+1))
     fi
 done < "$REPOS_FILE"
+echo "$cloned out of $i repositories needed cloning"
