@@ -11,8 +11,8 @@ vim.o.autoindent = true
 vim.o.number = true
 vim.o.signcolumn = 'auto:3' -- was set to 'no'
 vim.o.backup = false
-vim.o.nowritebackup = true
-vim.o.noswapfile = true
+-- vim.o.nowritebackup = true
+-- vim.o.noswapfile = true
 
 -- vim.opt.guioptions:remove {'T'}
 vim.o.visualbell = true
@@ -25,7 +25,7 @@ vim.o.autowrite = true
 -- and the start of insert block
 -- vim.o.bs = 'indent,eol,start'
 vim.opt.fo:remove {'t'}
-vim.o.colorcolumn = 80
+vim.o.colorcolumn = "80"
 
 vim.o.hlsearch = true
 vim.o.incsearch = true

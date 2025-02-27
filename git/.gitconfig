@@ -12,7 +12,7 @@
 [alias]
 	s = status
 	p = pull
-	c = commit
+	cs= commit -s -m
 	a = add -p
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lg1 = log --pretty=oneline
@@ -53,3 +53,5 @@
 	noprefix = true
 [pull]
 	rebase = true
+[tag]
+	forceSignAnnotated = true

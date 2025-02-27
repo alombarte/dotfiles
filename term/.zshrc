@@ -64,12 +64,7 @@ DEFAULT_USER="artomb"
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='mvim'
- fi
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -108,7 +103,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 # Pip and local bins:
-export PATH="/home/artomb/.local/bin/:$PATH"
+export PATH="/home/artomb/.local/bin/:/home/artomb/.bin/:$PATH"
 
 # Go
 #export GOROOT=/usr/local/opt/go/libexec/

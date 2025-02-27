@@ -22,7 +22,9 @@ alias mclone="bash ~/.dotfiles/utils/massive_clone.sh"
 alias mpull="bash ~/.dotfiles/utils/massive_pull.sh"
 alias persiana="bash ~/.dotfiles/utils/shutter_level.sh"
 # git pull all (pull all immediate dirs)
-alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && [ -d .git ] && echo \"Pulling {}\" && git pull)' ';'"
+alias gpa="find . -maxdepth 1 -type d -exec sh -c '(cd {} && [ -d .git ] && echo \"Pulling {}\" && git fetch -p && git pull)' ';'"
+# Delete merged branches
+alias dmb="git remote prune origin && git branch --merged | grep -v 'master' | grep -v 'main'| xargs git branch -d"
 
 alias nv="nvim"
 alias nvc="nvim --cmd 'cd ~/.dotfiles/editors/.config/nvim/'"
@@ -30,9 +32,11 @@ alias nvc="nvim --cmd 'cd ~/.dotfiles/editors/.config/nvim/'"
 # Linux
 alias copy='xclip -selection clipboard'
 alias cat='bat -p'
-alias krakendee='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" krakend/krakend-ee:watch'
+alias krakendee='docker run --rm -it -p "8080:8080" -e "KRAKEND_LICENSE_PATH=/LICENSE" -v "${HOME}/git/krakend/customer-licenses/customers/krakend-ee-demo/LICENSE:/LICENSE:ro" -v "$PWD:/etc/krakend" krakend/krakend-ee:watch'
 alias krakend='docker run --rm -it -p "8080:8080" -v "$PWD:/etc/krakend" devopsfaith/krakend:watch'
+alias docker-compose='docker compose'
 alias days='function days(){ date "+%d/%m/%Y %H:%M (%Z)" -d "+$1 days"; }; days'
 alias open="xdg-open"
 alias vim="nvim"
 alias vi="nvim"
+

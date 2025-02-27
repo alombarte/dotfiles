@@ -1,0 +1,92 @@
+matches:
+  - trigger: ":image"
+    replace: |
+      {{< product image >}}:{{< product latest_version >}}
+  - trigger: ":note"
+    replace: |
+      {{< note title="" type="warning|question|info|error|tip|note" >}}
+      {{< /note >}}
+  - trigger: ":schema"
+    replace: |
+      {{< schema data="file.json" >}}
+  - trigger: ":prod"
+    replace: "{{< product minor_version >}}"
+  - trigger: ":badge"
+    replace: |
+      {{< badge >}}Enterprise{{< /badge >}}
+  - trigger: ":table"
+    replace: |
+      |header1| header2 |
+      |--|--|
+      | row1 | col2 |
+  - trigger: ":button"
+    replace: |
+      {{< button-group >}}
+      {{< button url="URL" text="TEXT" >}}<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+      </svg>
+      {{< /button >}}
+      {{< button url="URL" type="inversed" >}}go.sum validator{{< /button >}}
+      {{< /button-group >}}
+  - trigger: ":tel"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "Me"
+              id: "+34 "
+            - label: "G"
+              id: "+34 "
+            - label: "Twilio"
+              id: "+1 "
+  - trigger: ":meet"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values:
+            - label: "Me"
+              id: "krakend.pipedrive.com"
+            - label: "G"
+              id: "https://krakend.pipedrive.com/scheduler/"
+            - label: "Tots"
+              id: "https://calendar.app.google/"
+  - trigger: ":cif"
+    replace: ""
+  - trigger: ":term"
+    replace: |
+      {{< terminal title="Term" >}}
+      {{< /terminal >}}
+  - trigger: ":kra"
+    replace: "{\n\"version\": 3,\n\"$schema\": \"https://www.krakend.io/schema/krakend.json\",\n\"host\": [\"http://localhost:8080\"],\n\"debug_endpoint\": true,\n\"echo_endpoint\": true,\n\"endpoints\": [{\n  \"endpoint\": \"/test\",\n  \"backend\": [{\n    \"url_pattern\": \"/__debug/test\"\n}]\n}]\n"
+  - trigger: ":web"
+    replace: ~/git/krakend/website
+  - trigger: ":docs"
+    replace: ~/git/krakend/website/content/docs
+  - trigger: ":g2"
+    replace: "https://www.g2.com/products/krakend-api-gateway/reviews"
+  - trigger: ":espanso"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        shell: sh
+        params:
+          cmd: echo "vim ~/.config/espanso/match/base.yml"
+#  - trigger: ":dot"
+#    replace: "{{output}}"
+#    vars:
+#      - name: output
+#        type: shell
+#        params:
+#          cmd: vim ~/.dotfiles
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d" 

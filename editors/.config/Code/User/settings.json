@@ -18,7 +18,7 @@
     },
     "editor.definitionLinkOpensInPeek": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "vetur.format.defaultFormatter.html": "prettyhtml",
     "vetur.format.defaultFormatter.css": "prettier",
@@ -66,5 +66,6 @@
     "git.openRepositoryInParentFolders": "never",
     "window.zoomLevel": 1,
     "[go-template]": {},
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
 
 }

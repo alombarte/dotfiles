@@ -24,4 +24,4 @@ case "$2" in
 esac
 
 
-curl "http://192.168.1.57/port_3480/data_request?id=lu_action&output_format=json&DeviceNum=$DEVICE&serviceId=urn:upnp-org:serviceId:Dimming1&action=SetLoadLevelTarget&newLoadlevelTarget=$1"
+curl "http://192.168.1.33/port_3480/data_request?id=lu_action&output_format=json&DeviceNum=$DEVICE&serviceId=urn:upnp-org:serviceId:Dimming1&action=SetLoadLevelTarget&newLoadlevelTarget=$1"

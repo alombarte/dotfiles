@@ -1,0 +1,7 @@
+# Original file: default.yml
+undo_backspace: false
+keyboard_layout:
+  rules: "evdev"
+  model: pc105
+  layout: es
+  evdev_modifier_delay: 10
