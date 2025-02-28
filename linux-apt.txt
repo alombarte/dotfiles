@@ -1,13 +1,14 @@
 # PACKAGES TO INSTALL via APT
 
 # Basics (needed to operate this repo)
-git wget curl zsh stow vim python
+git wget curl zsh stow vim python3
 
 # Term
 tilix tilix-common terminator xclip fonts-powerline
 jq
 rclone
 bat
+tmux
 
 # Desktop
 flameshot
@@ -19,17 +20,17 @@ flameshot
 shellcheck
 
 # VPN (OpenVPN + Juniper VPN / Cisco AnyConnect)
-openvpn network-manager-openvpn network-manager-openvpn-gnome
-openconnect network-manager-openconnect-gnome
+#openvpn network-manager-openvpn network-manager-openvpn-gnome
+#openconnect network-manager-openconnect-gnome
 
 # Add signature as PDF annotation (Is not Mac's Preview, but at least gets the job done)
 xournal
-okular
+#okular
 
 # Video
 ffmpeg
-kazam
+#kazam
 obs-studio
 
 # Kindle
-calibre
+#calibre

@@ -13,26 +13,37 @@ else
    usr_share_dir="${XDG_DATA_HOME}/fonts"
   fi
 fi
-usr_font_dir="${usr_share_dir}/NerdFonts"
+usr_font_dir="${usr_share_dir}/Myfonts"
 mkdir -p "$usr_font_dir"
 
 cd "$TMP_FONTS_DIR" || exit 1
 
-fonts=(
+nerd_fonts=(
     VictorMono
     Meslo
     Ubuntu
     Inconsolata
     )
-for i in "${fonts[@]}"; do
-    if test ! "$(fc-list | grep $i)"; then
-        echo "Installing font $i"
-        curl -OL "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$i.zip"
-        unzip -o "$i.zip"
-        rm "$i.zip"
-        echo "Copying font to $usr_font_dir"
+
+install_font() {
+    url=$1
+    zip="${url##*/}"
+    font_name="${zip%.*}"
+    echo "Installing font $font_name from zip file $zip"
+    if test ! "$(fc-list | grep $font_name)"; then
+        curl -OL "$url"
+        unzip -o "$zip"
+        rm "$zip"
+        echo "Copying $font_name to $usr_font_dir"
         mv * "$usr_font_dir/"
     else
-        echo "Font $i already installed"
+        echo "Font $font_name already installed"
     fi
+}
+
+for i in "${nerd_fonts[@]}"; do
+    install_font "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/$i.zip"
 done
+
+# IBM Plex font
+install_font "https://github.com/IBM/plex/releases/download/@ibm/plex-mono@1.1.0/ibm-plex-mono.zip"
