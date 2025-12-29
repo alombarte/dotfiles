@@ -1,5 +1,4 @@
 {
-    "editor.fontFamily": "'Meslo LG L DZ for Powerline','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.renderWhitespace": "boundary",
     "files.trimFinalNewlines": true,
     "php.validate.enable": false,
@@ -50,7 +49,7 @@
     "editor.bracketPairColorization.enabled": true,
     "git.confirmSync": false,
     "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Ayu Modern Dark+",
     "go.formatTool": "gofmt",
     "go.formatFlags": [
         "-s"
@@ -67,5 +66,10 @@
     "window.zoomLevel": 1,
     "[go-template]": {},
     "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "editor.fontFamily": "'IBM Plex Mono','Droid Sans Mono', monospace",
+    "editor.fontSize": 13,
 
 }
