@@ -1,7 +1,8 @@
 [user]
 	name = Albert Lombarte
 	email = albert@krakend.io
-	signingkey = D97AB5B9AD8B81D2
+    #signingkey = D97AB5B9AD8B81D2
+	signingkey = /home/artomb/.ssh/id_rsa.pub
 [color]
 	diff = auto
 	status = auto
@@ -55,3 +56,7 @@
 	rebase = true
 [tag]
 	forceSignAnnotated = true
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    allowedSignersFile = ~/.ssh/allowed_signers

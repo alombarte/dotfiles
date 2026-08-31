@@ -49,19 +49,36 @@ matches:
         params:
           values:
             - label: "Me"
-              id: "krakend.pipedrive.com"
+              id: "https://calendar.app.google/bLL1pJzKJZey77sp9"
             - label: "G"
-              id: "https://krakend.pipedrive.com/scheduler/"
+              id: "https://krakend.pipedrive.com/scheduler/6mB4q3FG/krakend-meeting"
             - label: "Tots"
-              id: "https://calendar.app.google/"
-  - trigger: ":cif"
-    replace: ""
+              id: "https://calendar.app.google/CLoXYVgnFiiMbnCp9"
   - trigger: ":term"
     replace: |
       {{< terminal title="Term" >}}
       {{< /terminal >}}
   - trigger: ":kra"
-    replace: "{\n\"version\": 3,\n\"$schema\": \"https://www.krakend.io/schema/krakend.json\",\n\"host\": [\"http://localhost:8080\"],\n\"debug_endpoint\": true,\n\"echo_endpoint\": true,\n\"endpoints\": [{\n  \"endpoint\": \"/test\",\n  \"backend\": [{\n    \"url_pattern\": \"/__debug/test\"\n}]\n}]\n"
+    replace: |
+      {
+          "version": 3,
+          "$schema": "https://www.krakend.io/schema/krakend.json",
+          "host": [
+              "http://localhost:8080"
+          ],
+          "debug_endpoint": true,
+          "echo_endpoint": true,
+          "endpoints": [
+              {
+                  "endpoint": "/test",
+                  "backend": [
+                      {
+                          "url_pattern": "/__debug/test"
+                      }
+                  ]
+              }
+          ]
+      }
   - trigger: ":web"
     replace: ~/git/krakend/website
   - trigger: ":docs"
@@ -89,4 +106,4 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%Y-%m-%d" 
+          format: "%Y-%m-%d"

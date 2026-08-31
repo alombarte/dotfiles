@@ -7,7 +7,7 @@
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -35,7 +35,6 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "editor.minimap.enabled": false,
     "update.showReleaseNotes": false,
     "workbench.enableExperiments": false,
     "extensions.ignoreRecommendations": true,
@@ -49,7 +48,7 @@
     "editor.bracketPairColorization.enabled": true,
     "git.confirmSync": false,
     "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Ayu Modern Dark+",
+    "workbench.colorTheme": "Mermaid Dark",
     "go.formatTool": "gofmt",
     "go.formatFlags": [
         "-s"
@@ -71,5 +70,36 @@
     ],
     "editor.fontFamily": "'IBM Plex Mono','Droid Sans Mono', monospace",
     "editor.fontSize": 13,
+    "search.useIgnoreFiles": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.svg": "default"
+    },
+    "window.menuBarVisibility": "compact",
+    "git.blame.editorDecoration.enabled": true,
+    "workbench.editor.enablePreview": false,
+    "krakenDAgent.mcpServers": [
+      {
+        "name": "filesystem",
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"]
+      }
+    ],
+    "krakenDAgent.llmProvider": "openai",
+    "krakenDAgent.llmModel": "gpt-4o",
+    "claudeCode.preferredLocation": "panel",
+    "chat.viewSessions.orientation": "stacked",
+    "json.schemaDownload.trustedDomains": {
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.krakend.io": true,
+        "https://www.schemastore.org/": true
+    },
+    "diffEditor.ignoreTrimWhitespace": false
+
 
 }
